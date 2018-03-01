@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <!-- Compiled and minified JavaScript -->
-	 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	<script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>    
-          	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
-      </script>
-
+	<!-- <link href="http://materializecss.com/css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Designs by Neena</title>
 </head>
 
@@ -18,46 +13,111 @@
 	.body{
 		margin-bottom: 0px;
 	}
+	/* just for jsfiddle */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v18/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.middle-indicator{
+   position:absolute;
+   top:50%;
+   }
+  .middle-indicator-text{
+   font-size: 4.2rem;
+  }
+  a.middle-indicator-text{
+    color:white !important;
+  }
+.content-indicator{
+    width: 64px;
+    height: 64px;
+    background: none;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px; 
+  }
+
+
 </style>
 
 <body style="background-color: #f5f5f5;" class="container">
 
-<div style="background-color: #ffffff;">
+<div style="background-color: #ffffff;" >
 
 	<nav style="background-color: #ffeaa7">
-	    <div class="nav-wrapper row">
-	    	<div class="col s4">
-	      		<a style="margin-left: 16px;" href="#" class="brand-logo left">Designs by Neena</a>
-			</div>
-
-
-			<div class="col s8">
-				<div class="row">
-					<div class="col s9">
-					    <ul id="nav-mobile" class="right hide-on-med-and-down">
+	    <div class="nav-wrapper">
+	      	<a style="margin-left: 16px;" href="#" class="brand-logo">Designs by Neena</a>
+	      	 	<ul id="nav-mobile" class="right hide-on-med-and-down">
 					    	<li><a href="/home">Home</a></li>
 					    	<li><a href="">Gallery</a></li>
 					    	<li><a href="">Contact</a></li>
 					        <li><a href="/services">Services</a></li>
 					        <li><a href="/testimonials">Testimonials</a></li>
+							<li>
+								<a href="https://www.instagram.com/_designsbyneena/">
+									<i class="material-icons fab fa-instagram"></i>
+								</a>
+							</li>
+			      	 		
+			      	 		<li>
+			      	 			<a href="https://www.facebook.com/hennabyneena/?fref=mentions">
+			      	 				<i class="material-icons fab fa-facebook"></i>
+			      	 			</a>
+			      	 		</li>
 
-
-					    </ul>
-			  		</div>
-			  		<div class="col s3">
-					    <ul id="nav-mobile" class="right hide-on-med-and-down">
-			      			<li><a href="https://www.instagram.com/_designsbyneena/"><i class="material-icons fab fa-instagram"></i></a></li>
-			      	 		<li><a href="https://www.facebook.com/hennabyneena/?fref=mentions"><i class="material-icons fab fa-facebook"></i></a></li>
-			      	 		<!-- <li><a href="sass.html"><i class="material-icons fab fa-yelp"></i></a></li> -->
-
-					    </ul>
-			  		</div>
-
-				</div>
-			</div>
+				</ul>
 
 	    </div>
     </nav>
+
+    <div class="carousel carousel-slider center" data-indicators="true">
+   <div class="carousel-fixed-item center middle-indicator">
+     <div class="left">
+      <a href="Previo" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons left  middle-indicator-text">chevron_left</i></a>
+     </div>
+     
+     <div class="right">
+     <a href="Siguiente" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons right middle-indicator-text">chevron_right</i></a>
+     </div>
+    </div>
+	    <a class="carousel-item" href="#one!"><img src="res/neena.jpg"></a>
+
+	   <!--  <div class="carousel-item amber white-text" href="#two!">
+	      <h2>Second Panel</h2>
+	      <p class="white-text">This is your second panel</p>
+	    </div>
+	    <div class="carousel-item green white-text" href="#three!">
+	      <h2>Third Panel</h2>
+	      <p class="white-text">This is your third panel</p>
+	    </div>
+	    <div class="carousel-item blue white-text" href="#four!">
+	      <h2>Fourth Panel</h2>
+	      <p class="white-text">This is your fourth panel</p>
+	    </div> -->
+  </div>
+        
+
+
+
 
 	<div style="background-color: #ffffff;">
 		<h4 style="padding: 16px;" >Artist Profile</h4>
@@ -250,13 +310,37 @@
 
 	</div>
 
-<script type="text/javascript">
-Template.editPrediction.onRendered(()=>{
-   Materialize.updateTextFields()
-});
 
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+   	<script type="text/javascript" language="javascript">
+
+
+ $(document).ready(function(){
+   // start carrousel
+   $('.carousel').carousel();
+   $('.carousel.carousel-slider').carousel({
+      fullWidth: true
+   });
+
+
+   // move next carousel
+   $('.moveNextCarousel').click(function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      $('.carousel').carousel('next');
+   });
+
+   // move prev carousel
+   $('.movePrevCarousel').click(function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      $('.carousel').carousel('prev');
+   });
+
+ });
+   
 </script>
-     
-
 </body>
 </html>
